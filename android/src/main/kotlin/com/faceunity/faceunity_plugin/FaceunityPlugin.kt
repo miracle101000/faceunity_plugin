@@ -137,7 +137,7 @@ class FaceunityPlugin : FlutterPlugin, MethodCallHandler,EventChannel.StreamHand
     eventSink = null
     mainScope.cancel()
     renderPlugin.dispose()
-    glSurfaceViewPlatformViewFactory.release()
+    destroyRenderKit()
    }
 
 
